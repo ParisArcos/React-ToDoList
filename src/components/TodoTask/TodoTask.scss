@@ -1,0 +1,26 @@
+.list-group-item+.list-group-item,
+.list-group-item:first-child {
+  border-top-width: 1px;
+  margin-bottom: 7.5px;
+}
+.done {
+
+  border-color: green;
+  opacity: 0.75;
+
+  .input-task {
+    text-decoration: line-through;
+  }
+  
+}
+
+.input-task {
+  border: none;
+  width: 100%;
+  text-overflow: ellipsis;
+  outline: none;
+  &:focus{
+    border-bottom: solid 1px;
+  }        
+
+}
